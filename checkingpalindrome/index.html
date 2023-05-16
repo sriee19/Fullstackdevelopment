@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome check</title>
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            var s =$("#pal_in").val();
+            s= s.totLowerCase();
+            var rev =s.split("").reverse().join("");
+            if(s===rev){
+                $("#result").html("palindrome")
+            }
+            else{
+                $("#result").html("not a palindrome")
+            }
+        })
+    }) 
+</script>
+<body>
+    <div class="total">
+        <h1>Palindrome check</h1>
+        <input type="text" id="pal_in" placeholder="type Input">
+        <button id="btn">Check</button>
+        <br><br>
+        <span id="result"></span>
+    </div>
+</body>
+</html>
