@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login page</title>
+</head>
+<body>
+    <h1>Login form using PHP</h1>
+    <form name='f1'>    
+        <div class="headingsContainer">
+            <h3>Sign in</h3>
+        </div>
+        <div class="mainContainer">
+            <label for="username">Your username</label>
+            <input type="text" placeholder="Enter Username" name="username" id="username" required>
+            <br><br>
+            <label for="pswrd">Your password</label>
+            <input type="password" placeholder="Enter Password" name="pswrd" id="pswrd" required>
+            <br>
+             <button type="button" onclick="loadDoc()">Login</button>
+             <p id="content"></p>
+        </div>
+    </form>
+</body>
+
+<SCRIPT>
+     function loadDoc(){
+        var username=document.getElementById("username").value;
+        console.log(username);
+        var xhttp=new XMLHttpRequest();
+        xhttp.open("GET","http://localhost/data.php?username="+username,true);
+        xhttp.send();
+        xhttp.onreadystatechange=function(){
+            if(this.readyState==4 && this.status==200){
+                console.log(this.responseText);
+                document.getElementById("content").innerHTML=this.responseText;
+
+            }
+        };
+     }
+</SCRIPT>
+</html>
+
