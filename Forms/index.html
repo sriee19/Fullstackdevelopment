@@ -1,0 +1,147 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>Port registration form</title>
+ 
+    <style>
+        body {
+            background-color: #f13232;
+            font-family: Verdana;
+            text-align: center;
+        }
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(27, 11, 245, 0.5);
+        }
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        .form-control input,.form-control select,.form-control textarea {
+            border: 1px solid #111111;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        .form-control input[type="radio"],.form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        button {
+            background-color: #181616;
+            border: 1px solid #fc0606;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+  
+<body>
+    <h1> PORT'23 Registration form</h1>
+  
+    <form method="get" id="form" action="thankyoupage.html">
+ 
+        <div class="form-control">
+            <label for="name" id="label-name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-control">
+            <label for="dept" id="label-dept">Department</label>
+            <input type="text" id="dept" placeholder="Enter your deparment" required/>
+        </div>
+
+        <div class="form-control">
+            <label for="college" id="label-college"> College name</label>
+            <input type="text" id="college" placeholder="Enter your college name" required/>
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required/>
+        </div>        
+  
+        <div class="form-control">
+            <label for="event" id="label-event">Technical event</label>
+            <input type="checkbox" id="tech" name="technical event" value="algo quest">
+            <label for="technical event">Algo Quest</label><br>
+            <input type="checkbox" id="tech" name="technical event" value="webify">
+            <label for="technical event">Webify</label><br>
+            <input type="checkbox" id="tech" name="technical event" value="web hunt">
+            <label for="technical event">Web hunt</label>
+            <input type="checkbox" id="tech" name="technical event" value="web hunt">
+            <label for="technical event">Paper presentation</label>
+            <input type="checkbox" id="tech" name="technical event" value="web hunt">
+            <label for="technical event">Blind coding</label>
+        </div>
+        <div class="form-control">
+            <label for="event" id="label-event">Non-Technical event</label>
+            <input type="checkbox" id="tech" name="technical event" value="IPL AUCTION">
+            <label for="technical event">Ipl auction</label><br>
+            <input type="checkbox" id="tech" name="technical event" value="brushless painting">
+            <label for="technical event">Brushless painting</label><br>
+            <input type="checkbox" id="tech" name="technical event" value="Adzap">
+            <label for="technical event">Adzap</label><br>
+            <input type="checkbox" id="tech" name="technical event" value="Mindgame">
+            <label for="technical event">Mindgame</label><br>
+        </div>
+
+        <div class="form-control">
+            <label for="event" id="label-event">Workshop</label>
+            <select name="work" id="work">
+                <option>Choose a option</option>
+                <option>Deep Learning with Chat GPT</option>
+                <option>FullStack web development</option>
+                <option>None</option>
+            </select>
+        </div>
+        <button type="submit" value="submit" target="_blank">Submit</button>
+    </form>
+</body>
+  
+</html>
+
+
+
+
+
+thankyou page
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Thank you for your Registration!</h1>
+</body>
+</html>
+
+
